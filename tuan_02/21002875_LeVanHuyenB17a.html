@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .Bai17{
+            margin: auto;
+            width: 650px;
+            height: 785px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .7);
+            background-color: #ffd078;
+            margin-top: 48px;
+            margin-bottom: 48px;
+        }
+        #text{
+            text-align: center;
+        }
+        .one, .two, .six, .seven{
+            margin-left: 30px;
+            margin-top: 10px;
+        }
+        .three, .four, .five{
+            margin-left: 4px;
+            margin-top: 10px;
+        }
+       .text1{
+            margin-left: 20px;
+        }
+        .birth{
+            padding-right: 30px;
+        }
+        .form{
+            margin-left: 300px;
+            
+        }
+    </style>
+
+</head>
+<body>
+    <div class="Bai17">
+        <div>
+            <h3 id="text"><p>Survey Form</p></h3>
+            <p >If you are interested in purchasing one or more of our products, before ordering please complete some or all of the following survey for our marketing department.
+                Answering any question is optional, and  all information will be kept strictly confidential. Thank you very much for your time!
+            </p>
+            <form action="">
+                <div class="one">
+                <label>1. What is your name?</label><br>
+                <input type="name" class="text1" name="name" size="30">
+            </div>
+            <div class="two">
+                <label for="name">2. What is your date of birth?</label>
+                <div >
+                    <label for="month">Month:</label>
+                <select name="birth" id="birth" class="birth">
+                 <option  value="January">January</option>   
+             <option value="Febuary">Febuary</option>
+             <option value="March">March</option>
+             <option value="April">April</option>
+             <option value="May">May</option>
+             <option value="Jun">Jun</option>
+             <option value="July">July</option>
+             <option value="August">August</option>
+             <option value="September">September</option>
+             <option value="October">October</option>
+             <option value="November">November</option>
+             <option value="December">December</option>
+                </div>    
+                 </select>
+                 
+                 <label for="date">Date: </label>
+                    <select name="Date" id="date">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+                        <option>15</option>
+                        <option>16</option>
+                        <option>17</option>
+                        <option>18</option>
+                        <option>19</option>
+                        <option>20</option>
+                        <option>21</option>
+                        <option>22</option>
+                        <option>23</option>
+                        <option>24</option>
+                        <option>25</option>
+                        <option>26</option>
+                        <option>27</option>
+                        <option>28</option>
+                        <option>29</option>
+                        <option>30</option>
+                        <option>31</option>
+                    </select>
+    
+              
+            <label>Year:</label>
+            <input type="year" id="year" name="year" size="5" value="19">
+            </div>
+            <div class="three">
+                <p>3. What is your mailing address (if you would like to have a hard copy of our catalog sent to you)?</p>
+                
+                <textarea rows="4" cols="50">Number /P.O. Box/Route:
+Street/Avenue/Road:
+City:
+State/Zip:
+                                    </textarea>
+            </div>
+            <div class="four">
+                <label>4. What is you email address</label><br>
+                <input type="address" id="address" name="address">
+            </div>
+            <div class="five">
+                <label>5. Have you viewed our online product catalog ?</label><br>
+                <input type="radio">Yes
+                <input type="radio">No
+            </div>
+            <div class="six"></div>
+            <label>6.  If so, what products(s), besides the one you are ordering, might you be interested in purchasing 
+            in the future? (Check all that apply.)</label><br>
+            <input type="checkbox">VCR<br>
+            <input type="checkbox">Big Screen TV<br>
+            <input type="checkbox">Audio Equipment<br>
+            <input type="checkbox">Video Equipment<br>
+            <input type="checkbox">Camera Equipment<br>
+            <input type="checkbox">Other
+            <input type="text" name="" id="" value="Please List" size="30">
+        </div>
+        <div class="seven">
+            <label>7. Do you have any question, comments or suggestions before proceeding to the Order Form?</label>
+            <textarea cols="50" rows="7" >Your Input:</textarea>
+        </div>
+        <div class="form">
+            <button id="send">Send Form</button>
+            <button id="clear">Clear Form</button>
+        </div>
+
+            </form>
+            </table>
+        </div>
+
+    </div>
+    
+</body>
+</html>
