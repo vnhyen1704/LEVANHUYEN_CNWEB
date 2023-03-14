@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         #menu-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+        }
+        #left{
+            display: flex;
+            justify-content: space-around;
+            width: 20%;
+            color: gray;
+           
+        }
+        #wrapper{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #menu{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            font-size: 16px;
+        }
+        #right {
+            display: flex;
+            justify-content: space-around;
+            width: 30%;
+        }
+        #banner{
+            width: 1100px;
+            background-image: url("/banner.png.png");
+          height: 390px;
+          display: flex;
+           padding: 0px 150px;
+            position: relative;
+    
+        }
+        #banner .box-left{
+            width: 50%;
+
+        }
+        #banner .box-left h1{
+            font-size: 50px;
+            margin-top: 75px;
+        }
+        #banner .box-left p{
+            margin-top: -30px;
+        }
+
+       
+        #left2{
+            display: flex;
+            justify-content: space-around;
+            width: 30%;
+        }
+        #wrapper2{
+            display: flex;
+            flex-direction: column;
+           }
+        #right2 {
+            display: flex;
+          justify-content: space-around;
+          width: 60px;
+            height: 30pxpx;
+            margin-left: 1200px;
+        }
+        #button1{
+        background-color: green; 
+        border: green; 
+        color: white; 
+        width: 400px; 
+        height: 50px;
+        margin-top: 60px;
+        margin-left: 90px;
+        font-size: 20px;
+    }
+    .button2{
+        background-color: white; 
+        border: white; 
+        color: green; 
+        width: 180px; 
+        height: 50px;
+        margin-top: 60px;
+       font-size: 20px;
+        }
+       
+        #social {
+            display: flex;
+            flex-direction: row;
+        }
+        .productlist{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+         
+            margin: 40px 200px 100px 140px;
+        }
+        .product1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        #img1{
+            padding-bottom: 0%;
+        }
+        .market{
+            margin-left: 200px;
+             margin-top: -60px
+        }
+        #Submit{
+    background-color: green;
+    border-color: green;
+    padding-bottom: 4.5px;
+    margin-left: -10px;
+    border-radius: 0px 10px 10px 0px;
+        font-size: 18px;
+        color: #dddddd;
+}
+#button3{
+    background-color:  rgb(112, 118, 112); 
+        border: rgb(112, 118, 112); 
+        color: white; 
+        width: 100px; 
+        height: 50px;
+        font-size: 20px;
+        margin-left: 1320px;
+       
+}
+.bestseller{
+    background-color: #FFC970;
+    padding: 5px 10px;
+    position: absolute;
+    color: #434343;
+    border-radius: 20px;
+     color: #434343;
+     top: 550px;
+    margin-left: 150px;
+    margin-top: 60px;
+   
+}
+.new{
+    background-color: #FFC970;
+    padding: 5px 10px;
+    position: absolute;
+    color: #434343;
+    border-radius: 20px;
+     color: #434343;
+     top: 1200px;
+     margin-left: 200px;
+}
+.new2{
+    background-color: #FFC970;
+    padding: 5px 10px;
+    position: absolute;
+    color: #434343;
+    border-radius: 20px;
+     color: #434343;
+    top: 1780px;
+    margin-left: 200px;
+}
+.list-page{
+    width: 50%;
+    margin: 0px auto;
+}
+
+.list-page{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+.list-page .item{
+    margin: 0px 10px;
+    width: 50px;
+    height: 37px;
+    background-color: rgb(192, 185, 185);
+    text-align: center;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+   
+   
+}
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+    <div id="menu">
+        <div id="left">
+            <div>Shop</div>
+            <div>Offers</div>
+            <div>Our story</div>
+            <div>Blog</div>
+        </div>
+    <div>
+        <img src="logo.png" alt="" >
+    </div>
+    <div id="right">
+        <input type="text">
+        <img src="Button 1 (1).png">
+        <img src="Button 1.png">
+</div>
+   </div>
+</div> 
+   <div id="banner">
+    <div class="box-left">
+    <h1>
+        <span> Gift for your skin</span><br>
+    </h1>
+    <p>Aliquip fugiat ipsum nostrud ex et eu incididunt<br>quis minim dolore excepteur voluptate</p>
+</div>
+   </div>
+ 
+<div id="wrapper2">
+        <div id="left2">
+            <button id="button1">All Products</button>
+            <button class="button2">Face</button>
+            <button class="button2">Body</button>
+        </div>
+        </div>
+</div>
+<div id="right2">
+    <input type="text" style="width: 200px; height: 50px; margin-top: -60px;" name="search" placeholder="Search product..." ></div>
+    
+</div>
+</div>
+
+</div>
+<div class="productlist">
+    <div class="product1">
+            <img src="Image 1 (1).png">
+            <div><h3><b>Product title</b><br></h3>Labore sin ipsum dolore mollit<h1>$32<span style="font-size: 20px; color: grey; margin: 10px;">$42</span></h1></h1></div>
+        <img src="/Button 1 (2).png" class="market">
+        <div class="bestseller">
+            Best-seller
+        </div>
+        </div>
+        <div class="product1">
+            <img src="Image 1 (2).png" id="img1">
+            <div><h3><b>Product title</b><br></h3>Labore sin ipsum dolore molli<h1>$22<span style="font-size: 20px; color: grey; margin: 10px;">$28</span></h1></div>
+       <img src="/Button 1 (2).png" class="market" > <div class="bestseller"> Best-seller</div>
+        </div>
+        <div class="product1">
+            <img src="Image 1 (3).png">
+            <div><h3><b>Product title</b><br></h3>Labore sin ipsum dolore mollit<h1>$18<span style="font-size: 20px; color: grey; margin: 10px;">$26</span></h1></h1></div>
+            <img src="/Button 1 (2).png" class="market"><div class="bestseller"> Best-seller</div> </div>
+        <div class="product1">
+            <img src="Image 1 (4).png">
+            <div><h3><b>Product title</b><br></h3>Labore sin ipsum dolore mollit<h1>$48<span style="font-size: 20px; color: grey; margin: 10px;">$56</span></h1></h1></div>
+            <img src="/Button 1 (2).png" class="market"> <div class="bestseller"> Best-seller</div></div>
+    </div>
+    </div>
+    <div class="productlist">
+        <div class="product1">
+<img src="Image 1 (5).png">
+                <div><h3><b>Product title</b><br></h3>Labore sin ipsum dolore mollit<h1>$31</h1></div>
+            <img src="/Button 1 (2).png" class="market">
+            </div>
+            <div class="product1">
+                <img src="Image 1 (6).png" >
+                <div><h3><b>Product title</b><br></h3>Labore sin ipsum dolore molli<h1>$40<span style="font-size: 20px; color: grey; margin: 10px;">$48</span></h1></div>
+           <img src="/Button 1 (2).png" class="market" > <div class="new">New</div> </div>
+            <div class="product1">
+                <img src="Image 1 (7).png">
+                <div><h3><b>Product title</b><br></h3>Labore sin ipsum dolore mollit<h1>$26</h1></h1></div>
+                <img src="/Button 1 (2).png" class="market"> </div>
+            <div class="product1">
+                <img src="Image 1 (8).png">
+                <div><h3><b>Product title</b><br></h3>Labore sin ipsum dolore mollit<h1>$18</h1></div>
+                <img src="/Button 1 (2).png" class="market"> </div>
+        </div>
+        </div>
+        <div class="productlist">
+            <div class="product1">
+                    <img src="Image 1 (9).png">
+                    <div><h3><b>Product title</b><br></h3>Labore sin ipsum dolore mollit<h1>$52</h1></div>
+                <img src="/Button 1 (2).png" class="market">
+                </div>
+
+                <div class="product1">
+                    <img src="Image 1 (10).png" id="img1">
+                    <div><h3><b>Product title</b><br></h3>Labore sin ipsum dolore molli<h1>$47<span style="font-size: 20px; color: grey; margin: 10px;">$42</span></h1></div>
+               <img src="/Button 1 (2).png" class="market" ><div class="new2">New</div> </div>
+                <div class="product1">
+                    <img src="Image 1 (11).png">
+                    <div><h3><b>Product title</b><br></h3>Labore sin ipsum dolore mollit<h1>$32</h1></h1></div>
+                    <img src="/Button 1 (2).png" class="market"> </div>
+                <div class="product1">
+                    <img src="Image 1 (12).png">
+                    <div><h3><b>Product title</b><br></h3>Labore sin ipsum dolore mollit<h1>$44</h1></div>
+                    <img src="/Button 1 (2).png" class="market"> <div class="new2">New</div>
+            </div>
+            </div>
+            <div class="list-page">
+                <div class="item">
+                    <a href="">1</a>
+                </div>
+                <div class="item">
+                    <a href="">2</a>
+                </div>
+                <div class="item">
+                    <a href="">3</a>
+                </div>
+                <div class="item">
+                    <a href="">4</a>
+                </div>
+            </div>
+
+<div id="menu-container" style="background-color: #27292c;color :white;size:10px; width:100%; height: 300px;">
+    <div id="About">
+        <div>
+            <h1>About</h1>
+            <p>Home</p>
+            <p>Shop</p>
+            <p>Our Story</p>
+            <p>Blog</p>
+            
+            <input list="language" name="language" value="English">
+            <datalist id="language">
+                <option value="Vietnamese">
+                </option><option value="Chinese">
+                </option><option value="English">
+            </option></datalist>   
+        </div>
+    </div>
+    <div id="Help">
+        <div>
+            <h1 style="margin-top: -25px;">Help</h1>
+            <p>Shiping &amp; Returns</p>
+        <p>Track Order</p>
+            <p>FAQS</p>
+            
+        </div>
+    </div>
+    <div id="Contact">
+        <div>
+            <h1 style="margin-top: -3px;">Contact</h1>
+            <p>Phone:</p>
+            <p>(1) 123 456 7893</p>
+            <p>Email:</p>
+            <p>name@email.com</p>
+        </div>
+    </div>
+    <div>
+        <div>
+            <h1>Receive new promotions</h1>
+            <p>Duis ea tempor commodo amet reprehende</p>
+            <input type="text" style="width: 200px; height: 22px; " placeholder="Input your email">
+            <input type="Submit" value="Subcribe"  id="Submit">
+            
+        </div>
+        <div id="social" style="width: 20%;">
+            <div><img src="/Twitter 1.png"> </div>
+            <div><img src="/Facebook 1.png"> </div>
+            <div> <img src="/LinkedIn 1.png"> </div>
+            <div> <img src="/YouTube 1.png"> </div>
+        </div>
+        <div>
+            © 2022 Brand, Inc - Privacy - Terms - SiteMap
+        </div>
+    </div>
+</div>  
+
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+         .container{
+            box-shadow: 0 0 10px rgb(0 0 0 / 70%);
+            width: 820px;
+            height: 600px;
+           color: rgb(74, 72, 72);
+        }
+        h1{
+            color: rgb(80, 78, 78);
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        .gray, .blue, .red{
+            display: inline-block;
+            margin: 2px;
+        }
+        .gray{
+            color: rgb(69, 68, 68);
+        }
+        .blue{
+            color: blue;
+        }
+        .red{
+            color: red;
+        }
+        .color{
+            margin-left: 10px;
+        
+        }
+        .content{
+            margin-left: 10px;
+            font-style: 10px;
+        }
+        .box1, .box2{
+            display: inline-block;
+        }
+        .box1  {
+            width: 190px;
+            height: 90px;
+            background-color: rgb(234, 229, 229);
+            line-height: 20px;
+            margin-left: 10px;
+            margin-top: 10px;
+         line-height: 25px;
+        }
+       
+    .box2 p {
+        float: right;
+            line-height: 20px;
+            margin-top: -3px;
+        }
+        .box2{
+            margin-left: 40px;
+        }
+        .border{
+            width: 600px;
+            height: 130px;
+           border-top: 10px solid #85C226;
+           border-right: 10px solid #F7C200 ;
+         border-bottom:10px solid #4493A0 ;
+          border-left:10px solid #DF127B ;
+          border-radius: 0px 30px 70px 20px;
+           text-align: center;
+          margin-top: 100px;
+          margin-left: 190px;
+           line-height: 25px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Border Radius</h1>
+            <div class="color">
+                <p class="gray"><b>Syntax :</b></p>
+                <p class="blue">border-radius:</p> 
+                <p class="red">(top-left) (top-right) (bottom-right) (bottom-left);</p>
+                </div>
+               <div class="color">
+            <p class="gray"><b>Example:</b></p>
+            <p class="blue">border-radius:</p>
+             <p class="red"> 0px 30px 70px 20px;</p>
+            </div>
+             <div class="content">
+                <p>For displaying round corners Border Radius property is used.<br>
+                IE9 and Opera use the same code. For Firefox a prefix <span style="color: green;"><b>"-moz."</b></span>needs
+                to be added before the code. And for Webkit<br>Browser<span style="color: green;"><b>"-webkit-"</b></span>
+            needs to be added before the code.</p> </div>
+            <div> <p style="margin-left: 10px;">Box-shadow property for all the browsers.</p>
+            </div>
+            <div class="box1">
+                <p style="margin-left: 10px; margin-top: 10px;" >
+                    <b>
+                        For IE and Opera
+                        <br>For Mozilla Firefox
+                        <br>For Webkit Browsers              
+                    </b>
+
+                </p>
+            </div>
+            <div class="box2">
+                <div>
+                    <p class="red">0px 30px 70px 20px;</p>
+                <p class="blue">box-shadow:</p>
+                
+            </div>
+        
+           <div>
+            <p class="red">0px 30px 70px 20px;</p>
+            <p class="blue">-moz-box-shadow:</p>
+           
+           </div>
+       <div>
+        <p class="red">0px 30px 70px 20px;</p>
+        <p class="blue">-webkit-box-shadow:</p>
+       </div>
+            </div>
+            <div class="border">
+                <p style="margin-top: 15px;">
+                No Border radius (0px) has been applied on the top-left (green-pink) corner.
+                <br>Border radius (30px) has been applied on the top-right (green-yellow) corner.
+                <br>Border radius (70px) has been applied on the bottom-right (blue-yellow) corner.
+                <br>Border radius (20px) has been applied on the bottom-left (blue-pink) corner.</p>
+            </div>
+</body>
+</html>

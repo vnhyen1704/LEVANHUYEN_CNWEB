@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     .Bai17b{
+        width : 450px;
+        height:685px;
+        margin: 20px;
+        box-shadow: 0 0 10px rgba(0, 0,0, 0.7)
+       
+    
+     }
+     #Browser{
+        
+       margin-right: 40px;
+        padding-right: 150px;
+     } 
+     .Browser {
+        padding-left: 8px;
+    }
+    .Bai17b div{
+       padding-top: 20px
+     }
+    #text{
+        margin-top: 15px;
+    }
+        
+    .hight{
+        border-color: blue;
+    }
+    #submit{
+        margin-top: 10px;
+    }
+    </style>
+</head>
+<body>
+    <div class="Bai17b">
+        <form action="" class="box">
+        <div class="Browser">
+            <label for="text">Browser:</label>
+            <select id="Browser" >
+                <option></option>
+            </select>
+        <div>
+            <label>Username:</label>
+            <input type="user" name="username" id="user">
+        </div>
+        <div  >
+            <label>Encryption:</label>
+            <select class="hight">
+                <option>2048 (High Grade)</option>
+            </select>
+            <div>
+                0<input type="range">100<br>
+                <input type="text" value="50" id="text">
+            </div>
+            <div>
+                <label>Birthday:</label>
+                <input type="date" name="date" >
+            </div>
+            <div>
+                <label>Select your favorite color:</label>
+                <input type="color" value="#DC143C">
+            </div>
+            <div>
+                <label>Birthday (month and year):</label>
+                <input type="month">
+            </div>
+            <div>
+                <label>Select a week:</label>
+                <input type="Week" value="Week">
+            </div>
+            <div>
+                <label>Select a time:</label>
+                <input type="time">
+            </div>
+            <div>
+                <label>Birthday (date and time):</label>
+                <input type="text">
+            </div>
+            <div>
+                <label>E-mail:</label>
+                <input type="text">
+            </div>
+            <div>
+                <label>Search Google:</label>
+                <input type="text">
+            </div>
+            <div>
+                <label>Telephone:</label>
+                <input type="text">
+            </div>
+            <div>
+                <label>Add your homepage:</label>
+                <input type="text">
+            </div>
+            <input type="submit" value="Submit" id="submit">
+            <p><b>Note:</b> The datalist tag is not supported in Safari or IE9 (and earlier)</p>
+        </form>
+        </div>
+        </div>
+
+    </div>
+</body>
+</html>
