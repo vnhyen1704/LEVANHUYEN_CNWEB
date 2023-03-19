@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#wrapper {
+            display: flex;
+            justify-content: center;
+        }
+        
+        #container {
+            display: flex;
+            justify-content: space-between;
+            width: 1440px;
+        }
+        
+        #center {
+            width: 910px;
+           
+        }
+        
+        #right {
+            width: 440px;
+        }
+        
+#left {
+            width: 90px;
+            height: 870px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+ #left_above {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+ #below {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .item {
+            width: 32px;
+            margin-top: 50px;
+        }
+        
+ #setting {
+            margin-top: 36px;
+        }
+        .on_image {
+        display: flex;
+        justify-content: space-around;
+       width: 40%; 
+         
+      }
+ 
+.inter {
+    border:  solid #e93e69;
+    background: #e93e69;
+    border-radius: 20px;
+    width: 82px;
+    height: 27px;
+    text-align: center;
+    margin-top: -2px;
+    font-size: 14px;
+}
+.symbol {
+    display: flex;
+  justify-content: space-around;
+width: 498px;
+
+ margin-top: -40px;
+margin-left: 180px;
+}
+.bigimage {
+    width: 827px;
+    height: 455px;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+.end {
+    background-color: #F22128;
+    padding: 0px 15px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.three_contact {
+    display: flex;
+margin-top: 30px;
+    width: 250px;
+    height: 160px;
+   }
+
+.list_contact {
+    margin-left: 25px;
+}
+.boxchat_right {
+    width: 500px;
+    height: 100vh;
+    border-left: 1px solid whitesmoke;
+    position: sticky;
+    top: 0px;
+}
+
+.boxchat_right .box_column {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.boxchat_right .box_column>div {
+    padding: 20px;
+}
+
+
+.box_column .view_list {
+    border-bottom: 1px solid whitesmoke;
+}
+
+.box_column .view_list .top_heading {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+
+
+.list_user .user_view {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.list_user .user_view>div {
+    display: flex;
+    align-items: center;
+}
+
+.list_user .user_view .avatar_user img {
+    margin-right: 10px;
+}
+
+.list_user .user_view .select>div {
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.top_heading .btn__add_user-part {
+    border: 1px solid #dd1f4e;
+    color: #dd1f4e;
+    padding: 3px 15px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.box_column .view_chat_group {
+    height: 100%;
+    border-top: 1px solid whitesmoke;
+}
+
+.view_chat_group .content__chat {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content__chat .wrap__chat {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    position: relative;
+    margin-top: 20px;
+}
+.wrap__chat .over-auto {
+    position: absolute;
+    top: 0px
+}
+
+
+.wrap__chat .single-chat {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.single-chat .avatar-chat {
+    margin-right: 20px;
+}
+
+.single-chat .notepad_content {
+    position: relative;
+}
+
+.single-chat .notepad_content .name_user .time_send {
+    padding-top: 7px;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(97, 92, 92);
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.single-chat .notepad_content .name_user {
+    padding-top: 7px;
+    font-weight: 555;
+    font-size: 15px;
+}
+
+.single-chat .notepad_content .chat {
+    margin-top: 5px;
+    background-color: #ece7e7;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+
+
+.sent-message .text>input {
+    width: 100%;
+    height: 100%;
+    padding: 15px 10px;
+    height: 100%;
+    display: block;
+    background: whitesmoke;
+    border-radius: 9px;
+    outline: none;
+    border: none;
+    margin-left: 2px;
+}
+
+
+.heading__text {
+    font-size: 24px;
+    font-weight: 600;
+    display: flex;
+}
+
+.number__length-list {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #c643632d;
+    border-radius: 100%;
+    color: #dd1f4e;
+    font-size: 15px;
+    margin-left: 10px;
+}
+</style>
+
+<body>
+    <div id="wrapper">
+        <div id="container">
+            <div id="left">
+<div id="left_above">
+                    <img class="item" src="logo.png" alt="" style="width: 50px; height: 50px;">
+                    <img class="item" src="home.png" alt="">
+                    <img class="item" src="chatting.png" alt="">
+                    <img class="item" src="calender.png" alt="">
+                    <img class="item" src="cam.png" alt="">
+                    <img class="item" src="user.png" alt="">
+                </div>
+
+                <div id="below">
+                    <img src="avatar.png" width="44" alt="">
+                    <img id="setting" src="setting.png" width="44" alt="">
+                </div>
+            </div>
+            <div id="center">
+                <div>
+                    <h2>Meeting title</h2>
+                
+                    <div class="on_image">
+                        <div class="inter">Internal</div>
+                        <div>
+                             <img src="/calender_small.png">
+                            Sep 02, 2022</div>
+                      <div>08:00 - 09:00 AM</div>
+                    </div>
+                </div>
+                <div class="bigimage">
+                    <img src="/img_big.png" alt="">
+                </div>
+                <div class="three_contact" style="margin-bottom: 60px;">
+                    <img src="/img2.png"  class="list_contact">
+                    <img src="/img1.png" class="list_contact">
+                    <img src="/img.png" class="list_contact">
+                </div>
+           
+                <div class="symbol">
+                    <img src="/mic_grey_color.png">
+                    <img src="/cam_color.png">
+                    <img src="/speaker_grey_color.png">
+                    <div class="end">End Metting</div>
+                  <img src="/Button 2179.png">
+                  <img src="/share.png">
+                  <img src="bacham.png">
+                </div>
+            </div>
+          
+            
+            <div class="boxchat_right">
+                <div class="box_column">
+                    <div class="view_list">
+                        <div class="top_heading">
+                            <div class="heading__text">
+                                Participants
+                                <div class="number__length-list">
+                                    4
+                                </div>
+                            </div>
+                            <div class="btn__add_user-part">
+                                <div>+</div>
+                                <div>Add</div>
+                            </div>
+                        </div>
+                        <div class="list_user">
+                            <div class="user_view">
+                                <div>
+                                    <div class="avatar_user">
+                                        <img src="/avatar 1322.png" alt="avatar">
+                                    </div>
+                                    <div class="name__user-part">
+                                        Bemijajmin CartFord
+                                    </div>
+                                </div>
+                                <div class="select">
+                                    <div>
+                                        <img src="/mic1.png" alt="mic_on">
+                                    </div>
+                                    <div>
+                                        <img src="/cam_small.png" alt="video_on">
+                                    </div>
+                                    <div>
+                                        <img src="/bacham.png" alt="more">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="user_view">
+                                <div>
+                                    <div class="avatar_user">
+                                        <img src="avatar 1323.png" alt="avatar">
+                                    </div>
+                                    <div class="name__user-part">
+                                        Crirtan Scott
+                                    </div>
+                                </div>
+                                <div class="select">
+                                    <div>
+                                        <img src="/mic1.png" alt="mic_on">
+                                    </div>
+                                    <div>
+                                        <img src="/cam_small.png" alt="video_on">
+                                    </div>
+                                    <div>
+                                        <img src="/bacham.png" alt="more">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="user_view">
+                                <div>
+                                    <div class="avatar_user">
+                                        <img src="/avatar 1324.png" alt="avatar">
+                                    </div>
+                                    <div class="name__user-part">
+                                        Debora Chu
+                                    </div>
+                                </div>
+                                <div class="select">
+                                    <div>
+                                        <img src="/mic2.png" alt="mic_off">
+                                    </div>
+                                    <div>
+                                        <img src="/cam_small.png" alt="video_on">
+                                    </div>
+                                    <div>
+                                        <img src="/bacham.png" alt="more">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="user_view">
+                                <div>
+                                    <div class="avatar_user">
+                                        <img src="/avatar 1325.png" alt="avatar">
+                                    </div>
+                                    <div class="name__user-part">
+                                        JortDan Nevivert
+                                    </div>
+                                </div>
+                                <div class="select">
+                                    <div>
+                                        <img src="/mic1.png" alt="mic_on">
+                                    </div>
+                                    <div>
+                                        <img src="/cam_small.png" alt="video_on">
+                                    </div>
+                                    <div>
+                                        <img src="/bacham.png" alt="more">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="view_chat_group">
+                        <div class="content__chat">
+                            <div class="heading__text">
+                                Chat
+                            </div>
+                    <div class="wrap__chat">
+                                <div class="over-auto">
+                                   <div class="single-chat">
+                                        <div class="avatar-chat">
+                                            <img src="/avatar 1326.png" alt="avatar">
+                                        </div>
+                                        <div class="notepad_content">
+                                            <div class="name_user">
+                                                <span>Deborrat Chu</span>
+                                                <span class="time_send">1:12 PM</span>
+                                            </div>
+                                    <div class="chat">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia magni ducimus.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="single-chat">
+                                        <div class="avatar-chat">
+                                            <img src="/avatar 1327.png" alt="avatar">
+                                        </div>
+                                        <div class="notepad_content">
+                                            <div class="name_user">
+                                                <span>JondDan Neeves</span>
+                                                <span class="time_send">1:12 PM</span>
+                                            </div>
+                                            <div class="chat">
+                                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Id dolores voluptati.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="single-chat">
+                                        <div class="avatar-chat">
+                                            <img src="/avatar 1328.png" alt="avatar">
+                                        </div>
+                                        <div class="notepad_content">
+                                            <div class="name_user">
+                                                <span>JondDan Neeves</span>
+                                                <span class="time_send">1:12 PM</span>
+                                            </div>
+                                            <div class="chat">
+                                                😊 😊 😊
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="single-chat">
+                                        <div class="avatar-chat">
+                                            <img src="/avatar 1329.png" alt="avatar">
+                                        </div>
+                                        <div class="notepad_content">
+                                            <div class="name_user">
+                                                <span>JondDan Neeves</span>
+                                                <span class="time_send">1:12 PM</span>
+                                            </div>
+                                            <div class="chat">
+                                                Typing....
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sent-message">
+                                <div class="text">
+                                    <input type="text" name="message" placeholder="Add message">
+                                    
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
