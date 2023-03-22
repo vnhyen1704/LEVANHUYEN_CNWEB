@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+       #menu-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+        }
+        #left{
+            display: flex;
+            justify-content: space-around;
+            width: 50%;
+            
+           
+        }
+        #wrapper{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: -100px;
+        }
+        #menu{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            font-size: 16px;
+        }
+        .thanh_menu {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    color: gray;
+}
+        #right {
+            display: flex;
+            justify-content: space-around;
+            width: 30%;
+        }
+        .option_list {
+            display: flex;
+            justify-content: space-around;
+            width: 15%;
+            margin-left: 150px;
+        }
+.option {
+    margin-top: 50px;
+            background-color: whitesmoke;
+        border: 1px solid whitesmoke;
+             color: grey;
+   
+}
+.rating {
+    margin-left: 150px;
+}
+.bangdau {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+   
+}
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+    display: grid;
+  grid-template-areas:
+  'menu main right'
+    'menu footer  header';
+  gap: 10px;
+ margin-left: 130px;
+  padding: 30px;
+  width: 300px;
+}
+
+.grid-container > div {
+ 
+  text-align: center;
+  font-size: 30px;
+}
+.bangdau, .form {
+    display: flex;
+    justify-content: space-around;
+}
+.news {
+    margin-left: 155px;
+    margin-top: -5px;
+}
+.bangdau {
+    margin-left: 150px;
+   
+}
+
+.box__content_describe .describe_text .heading__text_des {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.box__content_describe .box__buy_now {
+    width: 450px;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+}
+
+.box__buy_now .wrap__box_buy {
+    padding: 20px;
+}
+
+.wrap__body .price__product {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: right;
+    color: #00BDD6;
+    margin-bottom: 20px;
+}
+
+.wrap__box_buy select {
+    width: 100%;
+    height: 40px;
+    display: block;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    background-color: #F3F4F6;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.box__buy_now .line__total--price{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.box__buy_now .line__total--price > div:nth-child(2){
+    font-weight: 600;
+}
+
+.box__buy_now .btn_mixin{
+    width: 100%;
+    height: 45px;
+    padding:5px 20px;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.box__buy_now .btn_mixin img{
+    width: 22px;
+    margin-right: 10px;
+}
+
+.box__buy_now .btn_buy-now{
+    background-color: #00BDD6;
+    color: #ffffff;
+}
+
+.box__buy_now .btn_add_cart{
+    border: 1px solid #00BDD6;
+    background: none;
+    color: #00BDD6;
+
+}
+.box__buy_now {
+    margin-top: -350px;
+    margin-left: 850px;
+    width: 350px;
+}
+.price__product {
+    color: #00BDD6 ;
+    font-size: 30px;
+}
+.price__product {
+    margin-left: 250px;
+}
+.danhgia {
+    margin-left: 130px;
+    margin-top: 30px;
+}
+.user {
+margin-top: 40px;
+margin-left: 30px;
+}
+.name_user {
+    margin-top: -39px;
+     margin-left: 50px;
+}
+.star {
+    margin-top: -2px;
+     margin-left: 50px;
+}
+.user {
+    display: flex;
+    justify-content: space-around;
+}
+.productlist{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+         
+            margin: 40px 200px 100px 140px;
+        }
+        .logo {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 70px;
+        }
+        .Subscribe {
+           margin-left: 650px;
+        }
+        .pro {
+            display: flex;
+            justify-content: space-evenly;
+            padding-left: 280px;
+            padding-right: 280px;
+        }
+        .notice {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+        .board {
+            width: 100px;
+            height: 80px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="menu">
+    <div id="left">
+        <div>
+            <img src="./Image 1713.png" alt="" >
+        </div>
+        <div class="thanh_menu">
+        <div>Home</div>
+        <div>Promotions</div>
+        <div>Best-sellers</div>
+        <div>New releases</div>
+        <div>Support</div>
+    </div>
+    </div>
+
+<div id="right">
+    <input type="text" placeholder="Search..." style="width:300px; background-color: rgb(227, 224, 224); border: solid rgb(227, 224, 224);">
+    <img src="./Bell 1.png">
+    <img src="./Shopping cart simple 1.png">
+    <img src="./Avatar 758.png">
+</div>
+</div>
+</div>
+<div>
+<div class="option_list">
+<button class="option">Home</button>
+<button class="option" >Category</button>
+<button class="option" >Produclitle</button>
+</div>
+</div>      
+    <div>
+        <div>
+           <h1 style="margin-left: 150px;">Product Little</h1>>
+        </div>
+        <div class="rating">
+            <img src="./Rating 303.png">
+            <span>4.20</span>
+            <span>(99 reviews)</span>
+        </div>
+    </div>
+    <div>
+        <div class="grid-container">
+            <div class="item1">
+                <img src="./Image 1709.png">
+            </div>
+            <div class="item2">
+                <img src="./Image 1705.png">
+            </div>
+            <div class="item3">
+                <img src="./Image 1708.png">
+            </div> 
+            <div class="item4">
+                <img src="./Image 1707.png">
+            </div>
+            <div class="item5">
+                <img src="./Image 1706.png">
+            </div>
+          </div>
+    </div>
+    <div class="news">
+        <div>
+        <h2>Product description</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident quas, repellat culpa alias nemo voluptatum porro<br> maxime laboriosam id ipsum perferendis praesentium quidem deserunt sunt? Quisquam porro rerum molestias<br> quasi totam repudiandae aliquam nobis dicta modi? Et laborum provident quod exercitationem ab molestias ipsum </p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut nemo voluptatibus illo?Laborum dolores qui sapiente nemo<br> explicabo, uodreiciendis fuga totam in! Tenetur tempora assumenda, ipsa minus dolore molestias , id error voluptate<br> architecto quaerat reprehenderit est. Velit eum vitae architecto sint! Omnis mollitia labore numquam alias<br> recusandae, expedita repudiandae voluptates repellat sed pariatur</p>
+    </div>
+</div>
+
+<div class="bangdau">
+    <div>
+        <img src="./Truck 1.png">
+        <span>Free delivery</span>
+    </div>
+    <div>
+        <img src="./Arrow bend up left 1.png">
+        <span> 7 days return</span>
+    </div>
+</div>
+<div class="bangdau">
+    <div>
+        <img src="./Globe 1.png">
+        <span>Made in USA</span>
+    </div>
+    <div>
+        <img src="./Medal 1.png">
+        <span> 2 years guarantee</span>
+    </div>
+</div>
+<div class="bangdau">
+    <div>
+        <img src="./Chat dots 1.png">
+        <span>100% authetic</span>
+    </div>
+    <div>
+        <img src="./Checks 1.png">
+        <span> 24/7 customer support</span>
+    </div>
+</div>
+
+<div class="form">
+  <form action="">
+    <div class="box__buy_now">
+        <div class="wrap__box_buy">
+            <div class="price__product"><b>$99</b></div>
+            <div>
+                <select>
+                    <option value="null">Color</option>
+                    <option value="red">red</option>
+                    <option value="black">black</option>
+                </select>
+                <select>
+                    <option value="null">Size</option>
+                    <option value="size-S">S</option>
+                    <option value="size-M">M</option>
+                </select>
+                <select>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="6">6</option>
+                </select>
+            </div>
+            <div class="line__total--price">
+                <div>Total</div>
+                <div>$265</div>
+            </div>
+            <button class="btn_mixin btn_buy-now">Buy Now</button>
+            <button class="btn_mixin btn_add_cart">
+                <img src="./image_component/icon_shopping _cart_simple-color.png" alt="">
+                Add To Cart
+            </button>
+        </div>
+    </div>
+</div>
+<div>
+    <hr style="width: 1250px;">
+</div>
+<div>
+    <div class="danhgia">
+       <span style="font-size: 25px;"> <b >Reviews</b></span>
+       <img src="./Rating 304.png">
+       <b>4,20</b> <span style="color: gray;">(99 reviews)</span><span style="margin-left: 850px; color: gray;">Show all reviews</span> 
+    </div>
+    <div class="user">
+    <div>
+    <div> <img src="Avatar 753.png"></div>
+   <div  class="name_user"> <b>Jay RutheFord</b><span style="font-size: 12px; color: gray;"> 3d ago</span></div>
+   <div class="star"><img src="./Rating 300.png"></div>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ullam perferendis<br>omnis ad ipsam optio quis repudiandae iusto cumque voluptas.</p>
+   <div>
+    <div> <img src="Avatar 755.png"></div>
+   <div  class="name_user"> <b>Jay RutheFord</b><span style="font-size: 12px; color: gray;"> 3d ago</span></div>
+   <div class="star"><img src="./Rating 300.png"></div>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ullam perferendis<br>omnis ad ipsam optio quis repudiandae iusto cumque voluptas.</p>
+</div>
+</div>
+    <div>
+    <div> <img src="Avatar 756.png"></div>
+   <div  class="name_user"> <b>Jay RutheFord</b><span style="font-size: 12px; color: gray;"> 3d ago</span></div>
+   <div class="star"><img src="./Rating 300.png"></div>
+   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.Beatae ullam<br> perferendis. Necessitatibus excepturi voluptatibus temporibus .</p>
+   <div>
+    <div> <img src="Avatar 757.png"></div>
+   <div  class="name_user"> <b>Jay RutheFord</b><span style="font-size: 12px; color: gray;"> 3d ago</span></div>
+   <div class="star"><img src="./Rating 300.png"></div>
+   <p>Lorem ipsum dolor, sit amet consectetur voluptatibus temporibus,<br>harum itaque maxime assumenda quam cum recusandae.</p>
+</div>
+</div>
+    </div>
+    <hr style="width: 1250px;">
+    <div>
+        <div style="margin-top: 60px;  margin-left: 140px; ">
+          <b style="font-size: 25px;">Related products</b><span style="margin-left: 900px; color: gray; font-size: 15px;">See more > </span>
+        </div>
+        <div class="productlist">
+            <div class="product1">
+                <img src="./Image 1704.png" id="img1">
+               <b>Product little</b> <span style="margin-left: 150px; padding-top: 900px;"><img src="./Heart 23.png"></span>
+               <p style="color: #00BDD6;"><b>$230</b></p>
+               <div>
+                <img src="./Rating 301.png" alt=""> <span style="margin-left: 90px; color: grey; font-size: 13px;">1000 items sold</span>
+               </div>
+            </div>
+            <div class="product1">
+                <img src="./Image 1703.png" id="img1">
+               <b>Product little</b> <span style="margin-left: 150px; padding-top: 900px;"><img src="./Heart 23.png"></span>
+               <p style="color: #00BDD6;"><b>$199</b></p>
+               <div>
+                <img src="./Rating 301.png" alt=""> <span style="margin-left: 90px; color: grey; font-size: 13px;">1000 items sold</span>
+               </div>
+            </div>
+            <div class="product1">
+                <img src="./Image 1711.png" id="img1">
+               <b>Product little</b> <span style="margin-left: 150px; padding-top: 900px;"><img src="./Heart 23.png"></span>
+               <p style="color: #00BDD6;"><b>$299</b></p>
+               <div>
+                <img src="./Rating 301.png" alt=""> <span style="margin-left: 90px; color: grey; font-size: 13px;">1000 items sold</span>
+               </div>
+            </div>
+            <div class="product1">
+                <img src="./Image 1712.png" id="img1">
+               <b>Product little</b> <span style="margin-left: 150px; padding-top: 900px;"><img src="./Heart 23.png"></span>
+               <p style="color: #00BDD6;"><b>$99</b></p>
+               <div>
+                <img src="./Rating 301.png" alt=""> <span style="margin-left: 90px; color: grey; font-size: 13px;" >1000 items sold</span>
+               </div>
+            </div>
+            </div>
+    </div>
+    <div>
+        <hr style="width: 1250px;">
+    </div>
+     <div class="dongcuoi">
+       <div class="logo">
+        <img src="./Image 1710.png">
+       </div>
+       <div class="Subscribe">
+        <p><b>Subscribe to our new letter</b></p>
+        <input type="text" value="Input your email">
+        <input type="submit" value="Subscribe">
+       </div>
+       <div class="pro">
+        <div>
+            <h2>Product</h2>
+            <p>Features</p>
+            <p>Priciring</p>
+        </div>
+        <div>
+            <h2>Resources</h2>
+            <p>Blog</p>
+            <p>User guides</p>
+            <p>Webinars</p>
+        </div>
+        <div>
+            <h2>Company</h2>
+            <p>About us</p>
+            <p>Contact us</p>
+        </div>
+        <div>
+            <h2>Plans & Pricing</h2>
+            <p>Personal</p>
+            <p>Start up</p>
+            <p>Organization</p>
+        </div>
+     </div>
+     <div class="notice">
+        <div class="board">
+            <select style="width: 120px; height: 30px; border: solid rgb(232, 227, 227); background-color: rgb(232, 227, 227);">
+                <option>English</option>
+                <option>Vietnamese</option>
+            </select>
+        </div>
+        <div>
+            <span style="color: gray;"> © 2022 Brand, Inc - Privacy - Terms - SiteMap</span>
+        </div>
+        <div>
+            <img src="./Twitter 9.png">
+            <img src="./Facebook 9.png">
+            <img src="./LinkedIn 8.png">
+            <img src="./YouTube 8.png">
+        </div>
+     </div>
+</body>
+</html>
